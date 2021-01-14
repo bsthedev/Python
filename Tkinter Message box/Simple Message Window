@@ -3,8 +3,8 @@ msg = tk.Tk()
 
 str = "You are Breathtaking"
 
-message = Message(msg, text = str)
+message = tk.Message(msg, text = str)
 message.config(bg = 'white', font=('times new roman', 32, 'italic'))
 
 message.pack()
-tk.mainloop()
+msg.mainloop()
