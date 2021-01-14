@@ -1,0 +1,11 @@
+from tkinter.messagebox import *
+import tkinter as tk
+
+main = tk.Tk()
+main.title('Messages')
+main.geometry('300x300')
+
+#Question Box
+print(askquestion("Question", "Are you sure mah man?"))
+
+main.mainloop()
