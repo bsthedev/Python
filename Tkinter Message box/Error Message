@@ -1,0 +1,11 @@
+from tkinter.messagebox import *
+import tkinter as tk
+
+main = tk.Tk()
+main.title('Messages')
+main.geometry('300x300')
+
+#Error Message
+print(showerror("Error", "404 Error not found"))
+
+main.mainloop()
