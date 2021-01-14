@@ -1,0 +1,11 @@
+from tkinter.messagebox import *
+import tkinter as tk
+
+main = tk.Tk()
+main.title('Messages')
+main.geometry('300x300')
+
+#Ask for Retry
+print(askretrycancel("Retry", "Wanna Try Again tough guy?"))
+
+main.mainloop()
