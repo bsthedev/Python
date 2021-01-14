@@ -1,0 +1,11 @@
+from tkinter.messagebox import *
+import tkinter as tk
+
+main = tk.Tk()
+main.title('Messages')
+main.geometry('300x300')
+
+#Warning Message
+print(showwarning("Warning", "This may result in unforseen circumstances dude"))
+
+main.mainloop()
