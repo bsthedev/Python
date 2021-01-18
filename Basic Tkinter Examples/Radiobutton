@@ -1,22 +1,22 @@
 from tkinter import *
 
-def sel():
-   selection = "Your Favorite Fruit : " + str(var.get())
-   l1.config(text = selection)
+def fruit():
+   choice = "Your Favorite Fruit : " + str(var.get())
+   l1.config(text = choice)
 
 root = Tk()
 var = IntVar()
 
 #Radiobutton 1
-r1 = Radiobutton(root, text= "Mango", variable=var, value=1, command=sel)
+r1 = Radiobutton(root, text= "Mango", variable = var, value=1, command= fruit)
 r1.pack( anchor = W )
 
 #Radiobutton 2
-r2 = Radiobutton(root, text= "Orange", variable=var, value=2, command=sel)
+r2 = Radiobutton(root, text= "Orange", variable = var, value=2, command= fruit)
 r2.pack( anchor = W )
 
 #Radiobutton 3
-r3 = Radiobutton(root, text= "Pineapple", variable=var, value=3, command=sel)
+r3 = Radiobutton(root, text= "Pineapple", variable = var, value=3, command= fruit)
 r3.pack( anchor = W)
 
 l1 = Label(root)
