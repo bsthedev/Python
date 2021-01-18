@@ -24,7 +24,7 @@ def evaluate(equation):
    
 def main():
    window = Tk()
-   window.title("Basic GUI Calculator")
+   window.title("My GUI Calculator")
    window.geometry("400x300")
    equation = StringVar()
    input_field = Entry(window, textvariable=equation)
