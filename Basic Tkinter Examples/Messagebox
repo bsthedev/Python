@@ -1,0 +1,13 @@
+import tkinter as tk
+from tkinter import messagebox
+
+top = tk.Tk()
+
+''' Messagebox function '''
+def Mbox():       
+   messagebox.showinfo( "My Message Box", "Konnichiwa!!!!")
+
+B = tk.Button(text = "Click Me", command = Mbox)           #Button for messagebox
+B.pack()
+
+top.mainloop()
