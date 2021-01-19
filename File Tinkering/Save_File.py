@@ -17,5 +17,5 @@ def SaveFile():
 btn = Button(Save, text = 'Click to save file ', bd = 5 ,command = SaveFile)
 btn.pack()
 
-#Saves an empty file
+#Saves an empty file 
 Save.mainloop()
