@@ -1,0 +1,21 @@
+from tkinter import *
+
+top = Tk()
+top.title('MENU WIDGET')
+top.geometry('200x100')
+
+#Adding menubutton
+mb =  Menubutton(top, text= "Types of Players", relief= RAISED)
+mb.grid()
+mb.menu =  Menu(mb, tearoff = 0)
+mb["menu"] =  mb.menu
+
+Var1 = IntVar()
+Var2 = IntVar()
+
+#Adding menu
+mb.menu.add_checkbutton(label= "Noob", variable = Var1)
+mb.menu.add_checkbutton(label= "Pro", variable = Var2)
+mb.pack()
+
+top.mainloop()
