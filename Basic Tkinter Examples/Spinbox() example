@@ -1,0 +1,11 @@
+from tkinter import *
+
+base = Tk()
+base.title('SPINBOX')
+base.geometry('100x100')
+
+#Create spinbox widget
+sp = Spinbox(base, from_ = 0, to = 50)
+sp.pack()
+
+base.mainloop()
