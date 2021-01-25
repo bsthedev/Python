@@ -1,0 +1,14 @@
+from tkinter import *
+
+base = Tk()
+base.title('LabelFrame')
+base.geometry('200x100')
+
+#Create a labelframe
+labelframe = LabelFrame(base, text = "Outer LabelFrame")
+labelframe.pack(fill = "both", expand = "yes")
+ 
+label = Label(labelframe, text = "Labelframe contents")
+label.pack()
+ 
+base.mainloop()
