@@ -1,0 +1,21 @@
+from tkinter import *
+
+root = Tk()
+root.title('Colours')
+
+#Label 1
+l1 = Label(root, text = "Red BG", bg = "red", fg = "white",
+             font = ('Ariel', 10, 'underline'))
+l1.pack()
+
+#Label 2
+l2 = Label(root, text = "Green BG", bg = "green", fg = "black", 
+             font = ('Gothic', 12, 'bold'))
+l2.pack()
+
+#Label 3
+l3 = Label(root, text = "Blue BG", bg = "blue", fg = "white", 
+             font = ('Times', 18, 'italic'))
+l3.pack()
+
+root.mainloop()
