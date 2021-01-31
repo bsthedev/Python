@@ -43,7 +43,7 @@ def result(my_choice,cpu_choice):
     answer = "Your Choice: {uc} \nComputer's Choice : {cc} \nMy Score : {us} \nComputer Score : {cs} ".format(uc=USER_CHOICE,cc=CPU_CHOICE,us=USER_SCORE,cs=CPU_SCORE)    
     text_area.insert(END,answer)
    
-#Functions for Stone, Paper & Scissors         
+#Functions for Stone, Paper & Scissor         
 def stone():
     global USER_CHOICE
     global CPU_CHOICE
