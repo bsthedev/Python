@@ -5,11 +5,13 @@ window = Tk()
 window.geometry("400x300")
 window.title("Age Calculator App")
 
+#Label Names
 name = Label(text = "Name").grid(column = 0,row = 1)
 year = Label(text = "Year").grid(column = 0,row = 2)
 month = Label(text = "Month").grid(column = 0,row = 3)
 date = Label(text = "Day").grid(column = 0,row = 4)
 
+#Entry Fields
 nameEntry = Entry()
 nameEntry.grid(column=1,row=1)
 yearEntry = Entry()
@@ -19,6 +21,7 @@ monthEntry.grid(column=1,row=3)
 dateEntry = Entry()
 dateEntry.grid(column=1,row=4)
 
+#Entry functions
 def getInput():
     name = nameEntry.get()
     yn = Person(name,datetime.date(int(yearEntry.get()),
@@ -33,6 +36,7 @@ def getInput():
 button = Button(window, text = "Calculate Age", bg = 'red', command = getInput)
 button.grid(column = 1,row = 5)
 
+#Age Calculation class
 class Person:
     def __init__(self,name,birthdate):
         self.name = name
@@ -41,6 +45,5 @@ class Person:
         today = datetime.date.today()
         age = today.year - self.birthdate.year
         return age
-
 
 window.mainloop()
