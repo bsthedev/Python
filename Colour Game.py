@@ -14,6 +14,7 @@ def startGame(event):
       
     if timeleft == 30:  
         countdown() 
+    #Picks next colour
     nextColour() 
   
 #Function to choose and display the next colour
@@ -27,7 +28,7 @@ def nextColour():
         if e.get().lower() == colours[1].lower(): 
                  score += 1
         e.delete(0, END) 
-          
+        
         random.shuffle(colours) 
           
         #Change the colour of the text
@@ -43,7 +44,8 @@ def countdown():
         timeLabel.config(text = "Time left: "
                                + str(timeleft)) 
         timeLabel.after(1000, countdown) 
-  
+ 
+#Widget Window
 root = Tk()
 root.title("COLOUR GAME") 
 root.geometry("400x300") 
