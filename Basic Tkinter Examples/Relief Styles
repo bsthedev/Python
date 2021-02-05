@@ -1,0 +1,12 @@
+from tkinter import *
+
+root = Tk()
+root.title('Relief Types')
+
+B1 = Button(root, text = "FLAT", relief = FLAT).pack()
+B2 = Button(root, text = "RAISED", relief = RAISED).pack()
+B3 = Button(root, text = "SUNKEN", relief = SUNKEN).pack()
+B4 = Button(root, text = "GROOVE", relief = GROOVE).pack()
+B5 = Button(root, text = "RIDGE", relief = RIDGE).pack()
+
+root.mainloop()
