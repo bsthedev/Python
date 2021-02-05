@@ -20,5 +20,8 @@ B2 = Button(frame, text = "Heart cursor", cursor = "heart").pack()
 #Dot type cursor on Exit button  
 a = Button(frame, text = 'Exit', cursor = "dot", 
               command = frame.destroy).pack() 
+
+''' Different Cursor types can be arrow, circle, clock, cross, dotbox, exchange, fleur, heart, man, mouse,
+    pirate, plus, shuttle, sizing, spider, spraycan, star, targe, tcross, trek and watch '''
   
 frame.mainloop() 
