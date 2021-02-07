@@ -1,11 +1,12 @@
 import tkinter as tk
-msg = tk.Tk()
+
+msg = Tk()
 msg.title('Message Box')
 
 str = "You are Breathtaking"
 
-message = tk.Message(msg, text = str)
-message.config(bg = 'white', font=('times new roman', 32, 'italic'))
-
+message = Message(msg, text = str)
+message.config(bg = 'white', font = ('times new roman', 32, 'italic'))
 message.pack()
+
 msg.mainloop()
