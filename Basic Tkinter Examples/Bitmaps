@@ -1,0 +1,22 @@
+from tkinter import *
+
+top = Tk()
+top.title('Bitmaps')
+
+B1 = Button(top, text = "error", relief = RAISED,
+            bitmap = "error").pack()
+B2 = Button(top, text = "hourglass", relief = RAISED,
+            bitmap = "hourglass").pack()
+B3 = Button(top, text = "info", relief = RAISED, 
+            bitmap = "info").pack()
+B4 = Button(top, text = "question", relief = RAISED,
+            bitmap = "question").pack()
+B5 = Button(top, text = "warning", relief = RAISED, 
+            bitmap = "warning").pack()
+B5 = Button(top, text = "questhead", relief = RAISED, 
+            bitmap = "questhead").pack()
+
+''' Bitmap types are as follows: error, gray75, gray50, gray25,
+    gray12, hourglass, info, questhead, question & warning'''
+    
+top.mainloop()
