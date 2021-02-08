@@ -1,0 +1,19 @@
+from tkinter import *
+
+#Paned Window m1
+m1 = PanedWindow() 
+m1.pack(fill = BOTH, expand = 1) 
+
+#Adding entry field to m1 pane
+left = Entry(m1, bd = 5) 
+m1.add(left) 
+
+#Paned Window m2
+m2 = PanedWindow(m1, orient = VERTICAL) 
+m1.add(m2) 
+
+#Adding scale widget to m2 pane
+s = Scale(m2, orient = HORIZONTAL) 
+m2.add(s) 
+
+mainloop() 
