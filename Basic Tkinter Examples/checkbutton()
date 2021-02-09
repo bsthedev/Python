@@ -1,0 +1,17 @@
+from tkinter import *
+
+top = Tk()
+top.title('CheckButton')
+
+Var1 = IntVar()
+Var2 = IntVar()
+
+#Checkbutton 1
+C1 = Checkbutton(top, text = "Music", variable = Var1, onvalue = 1, 
+                 offvalue = 0, height=5, width = 20).pack()
+
+#Checkbutton 2
+C2 = Checkbutton(top, text = "Video", variable = Var2, onvalue = 1, 
+                 offvalue = 0, height=5, width = 20).pack()
+
+top.mainloop()
