@@ -1,0 +1,10 @@
+from tkinter import *
+
+top = Tk()
+top.title('Entry')
+L1 = Label(top, text= "Name").pack(side = LEFT)
+
+#Entry field
+E1 = Entry(top, bd = 5).pack(side = RIGHT)
+
+top.mainloop()
