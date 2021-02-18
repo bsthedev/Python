@@ -1,0 +1,11 @@
+import tkinter as *
+window = Tk()
+
+#Function to print text each time the button is clicked
+def click():
+    tkinter.Label(window, text = "General Kenobi").pack()  
+
+#click button
+b1 = Button(window, text = "Hello There!!", command = click).pack()
+
+window.mainloop()
