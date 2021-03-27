@@ -1,5 +1,5 @@
 # My Tkinter Codes
-Interesting Codes &amp; Concepts
+Interesting Tkinter Codes &amp; Concepts
 
 I am Learning and Sharing Basic & Advanced Concepts of Python and i am currently using Spyder IDE :)
 
